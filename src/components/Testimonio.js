@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Testimonio.css';
 
 //Componente testimonio
-function Testimonio() {
+function Testimonio(props) {
   return(
     <div className='contenedor-testimonio'>
       {/* /* Imagen */}
@@ -13,9 +13,9 @@ function Testimonio() {
       />
       {/* Texto del testimonio: nombre, cargo y breve desc. */}
       <div className='contenedor-texto-testimonio'>
-        <p className='nombre-testimonio'>Elon Musk en EUA</p>
-        <p className='cargo-testimonio'>CEO de Tesla</p>
-        <p className='texto-testimonio'>Elon Reeve Musk, conocido como Elon Musk, es un empresario, inversionista y magnate sudafricano, canadiense y estadounidense</p>
+        <p className='nombre-testimonio'>{props.nombre} en {props.pais}</p>
+        <p className='cargo-testimonio'>{props.cargo} en {props.empresa}</p>
+        <p className='texto-testimonio'>"{props.testimonio}"</p>
       </div>
     </div>
   );
