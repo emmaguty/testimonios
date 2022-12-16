@@ -20,5 +20,7 @@ function Testimonio() {
   );
 }
 
+//Exportacion con defecto: unico componente que se exportara
+//Exportacion nombrada importar varios componentes de un mismo archivo
 export default Testimonio;
 
